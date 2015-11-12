@@ -11,34 +11,35 @@ namespace AppBundle\Entity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * Description of t1
+ * Description of t1.
  *
  * @author Alexandr_Tsumarov1
  */
-class t1 implements UserInterface{
-	/**
-	 * 
-	 */
-	public function eraseCredentials(Array $aParams) {
-		
-		return $aParams;
-	}
+class t1 implements UserInterface
+{
+    /**
+     * 
+     */
+    public function eraseCredentials(Array $aParams)
+    {
+        return $aParams;
+    }
 
-	public function getPassword() {
-		
-	}
+    public function getPassword()
+    {
+    }
 
-	public function getRoles() {
-		
-	}
+    public function getRoles()
+    {
+    }
 
-	public function getSalt() {
-		
-	}
+    public function getSalt()
+    {
+    }
 
-	public function getUsername() {
-		
-	}
+    public function getUsername()
+    {
+    }
 
 //put your code here
 }

@@ -127,7 +127,7 @@ class BlogController extends Controller
         $deleteForm = $this->createDeleteForm($post);
 
         return $this->render('admin/blog/show.html.twig', array(
-            'post'        => $post,
+            'post' => $post,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -161,8 +161,8 @@ class BlogController extends Controller
         }
 
         return $this->render('admin/blog/edit.html.twig', array(
-            'post'        => $post,
-            'edit_form'   => $editForm->createView(),
+            'post' => $post,
+            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }

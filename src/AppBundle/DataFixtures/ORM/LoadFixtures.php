@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Defines the sample data to load in the database when running the unit and
- * functional tests. Execute this command to load the data:
+ * functional tests. Execute this command to load the data:.
  *
  *   $ php app/console doctrine:fixtures:load
  *
@@ -179,7 +179,7 @@ MARKDOWN;
         $numPhrases = rand(6, 12);
         shuffle($phrases);
 
-        return implode(' ', array_slice($phrases, 0, $numPhrases-1));
+        return implode(' ', array_slice($phrases, 0, $numPhrases - 1));
     }
 
     private function getRandomCommentContent()
@@ -189,6 +189,6 @@ MARKDOWN;
         $numPhrases = rand(2, 15);
         shuffle($phrases);
 
-        return implode(' ', array_slice($phrases, 0, $numPhrases-1));
+        return implode(' ', array_slice($phrases, 0, $numPhrases - 1));
     }
 }

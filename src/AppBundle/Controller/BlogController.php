@@ -21,7 +21,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Intl\Intl;
 
 /**
  * Controller used to manage blog contents in the public part of the site.
@@ -40,7 +39,7 @@ class BlogController extends Controller
     public function indexAction($page)
     {
         $query = $this->getDoctrine()->getRepository('AppBundle:Post')->queryLatest();
-		
+
         $paginator = $this->get('knp_paginator');
         $posts = $paginator->paginate($query, $page, Post::NUM_ITEMS);
         $posts->setUsedRoute('blog_index_paginated');

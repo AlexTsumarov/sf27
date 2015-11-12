@@ -18,7 +18,7 @@ use AppBundle\Entity\Post;
 /**
  * Functional test for the controllers defined inside the BlogController used
  * for managing the blog in the backend.
- * See http://symfony.com/doc/current/book/testing.html#functional-tests
+ * See http://symfony.com/doc/current/book/testing.html#functional-tests.
  *
  * Whenever you test resources protected by a firewall, consider using the
  * technique explained in:
@@ -28,7 +28,6 @@ use AppBundle\Entity\Post;
  *
  *     $ cd your-symfony-project/
  *     $ phpunit -c app
- *
  */
 class BlogControllerTest extends WebTestCase
 {
@@ -36,7 +35,7 @@ class BlogControllerTest extends WebTestCase
     {
         $client = static::createClient(array(), array(
             'PHP_AUTH_USER' => 'john_user',
-            'PHP_AUTH_PW'   => 'kitten',
+            'PHP_AUTH_PW' => 'kitten',
         ));
 
         $client->request('GET', '/en/admin/post/');
@@ -48,7 +47,7 @@ class BlogControllerTest extends WebTestCase
     {
         $client = static::createClient(array(), array(
             'PHP_AUTH_USER' => 'anna_admin',
-            'PHP_AUTH_PW'   => 'kitten',
+            'PHP_AUTH_PW' => 'kitten',
         ));
 
         $client->request('GET', '/en/admin/post/');
@@ -60,7 +59,7 @@ class BlogControllerTest extends WebTestCase
     {
         $client = static::createClient(array(), array(
             'PHP_AUTH_USER' => 'anna_admin',
-            'PHP_AUTH_PW'   => 'kitten',
+            'PHP_AUTH_PW' => 'kitten',
         ));
 
         $crawler = $client->request('GET', '/en/admin/post/');

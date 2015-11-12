@@ -15,7 +15,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * This class is the one that transforms the src/AppBundle/ directory into a real
- * Symfony bundle. There are two types of bundles:
+ * Symfony bundle. There are two types of bundles:.
  *
  *   * Reusable Bundles: they are meant to be shared between different applications.
  *     A lot of them are even publicly available in sites like packagist.org.

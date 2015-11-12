@@ -22,7 +22,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 /**
  * A command console that deletes users from the database.
  * To use this command, open a terminal window, enter into your project
- * directory and execute the following:
+ * directory and execute the following:.
  *
  *     $ php app/console app:delete-user
  *

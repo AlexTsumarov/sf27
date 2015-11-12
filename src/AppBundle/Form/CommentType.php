@@ -19,7 +19,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * Defines the form used to create and manipulate blog comments. Although in this
  * case the form is trivial and we could build it inside the controller, a good
  * practice is to always define your forms as classes.
- * See http://symfony.com/doc/current/book/forms.html#creating-form-classes
+ * See http://symfony.com/doc/current/book/forms.html#creating-form-classes.
  *
  * @author Ryan Weaver <weaverryan@gmail.com>
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
